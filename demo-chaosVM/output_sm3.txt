@@ -1,0 +1,1099 @@
+-----------------------汇编说明-------------------------
+# startLabel -> 开始标签: START_78        
+# Closure -> 闭包参数传入函数
+# CATCH_ERROE -> try{}catch(e){} 中的e对象
+# #BLOCKEND -> 块级作用域结束或者正常退出try块
+# #LABEL:CATCH_PC -> 记录try报错时跳转的PC位置, 即catch块
+# r0 -> 全局上下文对象
+# r1 -> 常量池
+# r2 -> 闭包数组
+# r3 -> this对象
+# r4 -> arguments对象
+# r5 -> currentFunc(当前函数本身,当前函数标签对应的函数)
+# r6 -> 字节码数字
+# r7 -> 临时寄存器, 初始化0
+-------------------------------------------------------
+LABEL_0:
+	    0:	r22=2043430169
+	    4:	return r22
+LABEL_6:
+	    6:	r34=r17
+	    8:	r26=r34-0
+	   10:	r34=++r34
+	   13:	r17=r34
+	   16:	r25="length"
+	   19:	r10=r28[r25]
+	   23:	r31=r17 < r10
+	   27:	r31 ? goto LABEL_3787 : goto LABEL_2940
+LABEL_31:
+	   31:	r15 ? goto LABEL_617 : goto LABEL_984
+LABEL_35:
+	   35:	r26="chunk"
+	   39:	r20="chunk"
+	   42:	r56=this[r26]
+	   45:	r35="concat"
+	   49:	r48=r56[r35]
+	   52:	r35="slice"
+	   55:	r65=r58[r35]
+	   59:	r35=0
+	   61:	r22=r65.call(r58,r35,r23)
+	   67:	r35=r48.call(r56,r22)
+	   72:	this[r26]=r35
+	   76:	goto LABEL_504
+START_78:
+	   78:	r10=Array(0)
+	   81:	r33=Array(0)
+	   84:	r44=function func_1917(){/*Closure:[r33,r10]*/},r44.length=0;
+	   91:	r10[0]=r44
+TRY_95:
+	   95:	#LABEL:CATCH_2462
+	   97:	r44=function func_255(){/*Closure:[]*/},r44.length=2;
+	  102:	r33[0]=r44
+	  106:	#BLOCKEND
+	  107:	goto LABEL_1087
+FUNC_109:
+	  109:	r39=arguments[0]
+	  113:	r56=typeof r39
+	  116:	r48="string"
+	  132:	r26=r56 === r48
+	  136:	r26 ? goto LABEL_3798 : goto LABEL_2691
+LABEL_140:
+	  140:	r25=r23 ^ r27
+	  144:	r36=r25 ^ r34
+	  147:	r25=r36 >>> 0
+	  151:	return r25
+LABEL_153:
+	  153:	r51=0
+	  156:	r21=r51
+	  158:	r103=r21 < 8
+	  161:	r103 ? goto LABEL_3071 : goto LABEL_1951
+LABEL_165:
+	  165:	r23="_expand"
+	  168:	r52=this[r23]
+	  172:	r23=r52.call(this,r110)
+	  176:	r171=r23
+	  179:	r23="reg"
+	  182:	r52=this[r23]
+	  185:	r23="slice"
+	  189:	r58=r52[r23]
+	  192:	r23=0
+	  195:	r95=r58.call(r52,r23)
+	  199:	r97=r95
+	  202:	r86=r23
+	  204:	r105=r86 < 64
+	  207:	r105 ? goto LABEL_3111 : goto LABEL_153
+LABEL_211:
+	  211:	r13="Symbol"
+	  214:	r13=Symbol
+	  218:	r10=typeof r13
+	  221:	r13="undefined"
+	  244:	r18=r10 === r13
+	  248:	r18=!r18
+	  251:	r18 ? goto LABEL_2072 : goto LABEL_2240
+FUNC_255:
+	  255:	r14=arguments[0]
+	  258:	r11=arguments[1]
+	  262:	r13=null
+	  264:	r18=r11 == r13
+	  268:	r18=!r18
+	  271:	r18 ? goto LABEL_211 : goto LABEL_2486
+FUNC_275:
+	  275:	r19=arguments[0]
+	  278:	r21=arguments[1]
+	  282:	r20=r21
+	  285:	r14=32
+	  288:	r20=r20 % r14
+	  292:	r21=r20
+	  295:	r20=r19 << r21
+	  299:	r14=32 - r21
+	  303:	r11=r19 >>> r14
+	  307:	r14=r20 | r11
+	  311:	r11=r14 >>> 0
+	  315:	return r11
+LABEL_317:
+	  317:	r32=null
+	  319:	r75=r32
+	  322:	r32="hex"
+	  331:	r10=r63 == r32
+	  335:	r10 ? goto LABEL_2743 : goto LABEL_399
+LABEL_339:
+	  339:	r18="reg"
+	  343:	r10="Array"
+	  346:	r10=Array
+	  349:	r11=8
+	  352:	r17=new r10(r11)
+	  356:	this[r18]=r17
+	  359:	r17="chunk"
+	  363:	r18=Array(0)
+	  366:	this[r17]=r18
+	  369:	r18="size"
+	  373:	r17=0
+	  376:	this[r18]=r17
+	  380:	r17="reset"
+	  383:	r18=this[r17]
+	  387:	r22=r18.call(this)
+	  391:	r18=void 0
+	  393:	return r18
+LABEL_395:
+	  395:	r15 ? goto LABEL_2021 : goto LABEL_3560
+LABEL_399:
+	  399:	r10="Array"
+	  402:	r10=Array
+	  405:	r46=32
+	  408:	r92=new r10(r46)
+	  412:	r75=r92
+	  415:	r92=0
+	  418:	r69=r92
+	  420:	r13=r69 < 8
+	  423:	r13 ? goto LABEL_2574 : goto LABEL_967
+LABEL_448:
+	  448:	return r12
+FUNC_450:
+	  450:	r35=arguments[0]
+	  453:	r23=arguments[1]
+	  457:	r27=arguments[2]
+	  460:	r34=arguments[3]
+	  464:	r9=r35 >= 0
+	  467:	r9 ? goto LABEL_2527 : goto LABEL_802
+FUNC_471:
+	  471:	r17=arguments[0]
+	  474:	r36=arguments[1]
+	  478:	r9=arguments[2]
+	  481:	r8=arguments[3]
+	  485:	r25=r17 >= 0
+	  488:	r25 ? goto LABEL_1080 : goto LABEL_980
+LABEL_492:
+	  492:	r72=0
+	  495:	r21=r72
+	  497:	r45=r21 < 64
+	  500:	r45 ? goto LABEL_582 : goto LABEL_2102
+LABEL_504:
+	  504:	r35="chunk"
+	  507:	r26=this[r35]
+	  510:	r35="length"
+	  514:	r22=r26[r35]
+	  518:	r35=r22 >= 64
+	  521:	r35 ? goto LABEL_2884 : goto LABEL_3656
+LABEL_525:
+	  525:	r15="Symbol"
+	  528:	r15=Symbol
+	  531:	r10="hasInstance"
+	  535:	r13=r15[r10]
+	  538:	r10=r11[r13]
+	  542:	r13=r10.call(r11,r14)
+	  547:	r10=!r13
+	  550:	r13=!r10
+	  553:	return r13
+LABEL_555:
+	  555:	r18=r10 < 16
+	  558:	r18 ? goto LABEL_0 : goto LABEL_3104
+LABEL_562:
+	  562:	r92="chunk"
+	  565:	r46=this[r92]
+	  568:	r92="length"
+	  572:	r10=r46[r92]
+	  575:	r92=r69 < r10
+	  578:	r92 ? goto LABEL_1598 : goto LABEL_317
+LABEL_582:
+	  582:	r72=r21 + 68
+	  586:	r41=r65[r21]
+	  590:	r66=r21 + 4
+	  594:	r68=r65[r66]
+	  598:	r66=r41 ^ r68
+	  602:	r68=r66 >>> 0
+	  605:	r65[r72]=r68
+	  608:	goto LABEL_2470
+LABEL_610:
+	  610:	r15=r10 < 64
+	  613:	r15 ? goto LABEL_2949 : goto LABEL_1697
+LABEL_617:
+	  617:	r24=r36 & r9
+	  621:	r20=~r36
+	  624:	r14=r20 & r8
+	  628:	r20=r24 | r14
+	  632:	r14=r20 >>> 0
+	  636:	return r14
+LABEL_638:
+	  638:	r15=r17 < 64
+	  641:	r15 ? goto LABEL_617 : goto LABEL_984
+FUNC_645:
+	  645:	r15=arguments[0]
+	  649:	r13="0"
+	  654:	r17=r15 & 255
+	  658:	r10="toString"
+	  661:	r14=r17[r10]
+	  664:	r10=16
+	  667:	r8=r14.call(r17,r10)
+	  672:	r10=r13 + r8
+	  676:	r8="slice"
+	  679:	r13=r10[r8]
+	  682:	r8=2
+	  685:	r14=-r8
+	  688:	r8=r13.call(r10,r14)
+	  693:	return r8
+LABEL_695:
+	  695:	r51=r12
+	  697:	r10=r51-0
+	  699:	r51=++r51
+	  702:	r12=r51
+	  704:	r9=r12 < 4
+	  707:	r9 ? goto LABEL_2534 : goto LABEL_3848
+LABEL_711:
+	  711:	r13=r14 instanceof r11
+	  715:	return r13
+LABEL_717:
+	  717:	r15="Math"
+	  720:	r15=Math
+	  723:	r41="floor"
+	  727:	r44=r15[r41]
+	  731:	r41=4294967296
+	  735:	r31=r22 / r41
+	  739:	r41=r44.call(r15,r31)
+	  743:	r34=r41
+	  746:	r41="chunk"
+	  749:	r31=this[r41]
+	  752:	r41="push"
+	  756:	r44=r31[r41]
+	  760:	r41=3 - r12
+	  764:	r15=8
+	  767:	r51=r41 * r15
+	  771:	r15=r34 >>> r51
+	  775:	r51=r15 & 255
+	  779:	r36=r44.call(r31,r51)
+	  784:	goto LABEL_2760
+LABEL_786:
+	  786:	r23=r86
+	  788:	r31=r23-0
+	  790:	r23=++r23
+	  793:	r86=r23
+	  795:	r105=r86 < 64
+	  798:	r105 ? goto LABEL_3111 : goto LABEL_153
+LABEL_802:
+	  802:	r9 ? goto LABEL_140 : goto LABEL_1871
+FUNC_806:
+	  806:	r110=arguments[0]
+	  810:	r58=r110 < 64
+	  813:	r58 ? goto LABEL_3660 : goto LABEL_165
+FUNC_817:
+	  817:	r18="reg"
+	  820:	r23=this[r18]
+	  823:	r11=0
+	  826:	r40=1937774191
+	  829:	r23[r11]=r40
+	  833:	r16="reg"
+	  836:	r40=this[r18]
+	  839:	r23=1
+	  842:	r37=1226093241
+	  845:	r40[r23]=r37
+	  849:	r39="reg"
+	  852:	r37=this[r18]
+	  855:	r23=2
+	  858:	r40=388252375
+	  861:	r37[r23]=r40
+	  865:	r50="reg"
+	  868:	r40=this[r18]
+	  871:	r23=3
+	  874:	r37=3666478592
+	  877:	r40[r23]=r37
+	  881:	r49="reg"
+	  884:	r37=this[r18]
+	  887:	r23=4
+	  890:	r40=2842636476
+	  893:	r37[r23]=r40
+	  897:	r36="reg"
+	  900:	r40=this[r18]
+	  903:	r23=5
+	  906:	r37=372324522
+	  909:	r40[r23]=r37
+	  913:	r41="reg"
+	  916:	r37=this[r18]
+	  919:	r23=6
+	  922:	r40=3817729613
+	  925:	r37[r23]=r40
+	  929:	r26="reg"
+	  932:	r40=this[r18]
+	  935:	r18=7
+	  938:	r23=2969243214
+	  942:	r40[r18]=r23
+	  945:	r23="chunk"
+	  949:	r18=Array(0)
+	  952:	this[r23]=r18
+	  955:	r18="size"
+	  959:	this[r18]=r11
+	  963:	r18=void 0
+	  965:	return r18
+LABEL_967:
+	  967:	r10="reset"
+	  970:	r56=this[r10]
+	  974:	r42=r56.call(this)
+	  978:	return r75
+LABEL_980:
+	  980:	r25 ? goto LABEL_1668 : goto LABEL_2520
+LABEL_984:
+	  984:	r14="console"
+	  987:	r14=console
+	  990:	r20="error"
+	  994:	r24=r14[r20]
+	  998:	r20="invalid j for bool function GG"
+	 1070:	r28=r24.call(r14,r20)
+	 1075:	r20=0
+	 1078:	return r20
+LABEL_1080:
+	 1080:	r25=r17 < 16
+	 1083:	r25 ? goto LABEL_1668 : goto LABEL_2520
+LABEL_1087:
+	 1087:	r44=function func_2776(){/*Closure:[r10]*/},r44.length=1;
+	 1093:	r31=r44
+	 1095:	r44=r10[0]
+	 1099:	r13="prototype"
+	 1102:	r16=r44[r13]
+	 1105:	r44="reset"
+	 1109:	r18=function func_817(){/*Closure:[]*/},r18.length=0;
+	 1114:	r16[r44]=r18
+	 1117:	r18=r10[0]
+	 1121:	r32="prototype"
+	 1124:	r44=r18[r13]
+	 1127:	r18="strToBytes"
+	 1131:	r16=function func_2490(){/*Closure:[]*/},r16.length=1;
+	 1136:	r44[r18]=r16
+	 1139:	r16=r10[0]
+	 1143:	r45="prototype"
+	 1146:	r18=r16[r13]
+	 1149:	r16="write"
+	 1153:	r44=function func_109(){/*Closure:[]*/},r44.length=1;
+	 1158:	r18[r16]=r44
+	 1161:	r44=r10[0]
+	 1165:	r15="prototype"
+	 1168:	r16=r44[r13]
+	 1171:	r44="sum"
+	 1175:	r18=function func_3020(){/*Closure:[]*/},r18.length=2;
+	 1180:	r16[r44]=r18
+	 1183:	r18=r10[0]
+	 1187:	r51="prototype"
+	 1190:	r44=r18[r13]
+	 1193:	r18="_compress"
+	 1197:	r16=function func_806(){/*Closure:[]*/},r16.length=1;
+	 1202:	r44[r18]=r16
+	 1205:	r16=r10[0]
+	 1209:	r39="prototype"
+	 1212:	r18=r16[r13]
+	 1215:	r16="_fill"
+	 1219:	r44=function func_1781(){/*Closure:[]*/},r44.length=0;
+	 1224:	r18[r16]=r44
+	 1227:	r44=r10[0]
+	 1231:	r46="prototype"
+	 1234:	r16=r44[r13]
+	 1237:	r44="_expand"
+	 1241:	r18=function func_2244(){/*Closure:[]*/},r18.length=1;
+	 1246:	r16[r44]=r18
+	 1249:	r18=r10[0]
+	 1253:	r35="prototype"
+	 1256:	r44=r18[r13]
+	 1259:	r18="_rotl"
+	 1263:	r16=function func_275(){/*Closure:[]*/},r16.length=2;
+	 1268:	r44[r18]=r16
+	 1271:	r16=r10[0]
+	 1275:	r9="prototype"
+	 1278:	r18=r16[r13]
+	 1281:	r16="_t"
+	 1285:	r44=function func_1940(){/*Closure:[]*/},r44.length=1;
+	 1290:	r18[r16]=r44
+	 1293:	r44=r10[0]
+	 1297:	r29="prototype"
+	 1300:	r16=r44[r13]
+	 1303:	r44="_ff"
+	 1307:	r18=function func_450(){/*Closure:[]*/},r18.length=4;
+	 1312:	r16[r44]=r18
+	 1315:	r18=r10[0]
+	 1319:	r25="prototype"
+	 1322:	r44=r18[r13]
+	 1325:	r18="_gg"
+	 1329:	r16=function func_471(){/*Closure:[]*/},r16.length=4;
+	 1334:	r44[r18]=r16
+	 1337:	r16=r10[0]
+	 1341:	r48="prototype"
+	 1344:	r18=r16[r13]
+	 1347:	r16="toArray"
+	 1351:	r13=function func_3511(){/*Closure:[]*/},r13.length=2;
+	 1356:	r18[r16]=r13
+	 1360:	r13="hello world!"
+	 1390:	r16=r31.call(void 0,r13)
+	 1394:	r49=r16
+	 1397:	r16="console"
+	 1400:	r16=console
+	 1403:	r13="log"
+	 1407:	r18=r16[r13]
+	 1411:	r13="80b737c798f5bb0d826a987b0289e110d2283bb13d124aba4ec183644a05bb65"
+	 1563:	r44=r49 === r13
+	 1567:	r17=r18.call(r16,r44,r49)
+	 1573:	r44=void 0
+	 1575:	return r44
+LABEL_1577:
+	 1577:	r34=r32.call(void 0,r30)
+	 1581:	r30=r34
+	 1584:	r8="push"
+	 1587:	r11=r29[r8]
+	 1591:	r24=r11.call(r29,r30)
+	 1596:	goto LABEL_6
+LABEL_1598:
+	 1598:	r92="_compress"
+	 1601:	r10=this[r92]
+	 1604:	r92="chunk"
+	 1608:	r46=this[r92]
+	 1611:	r92="slice"
+	 1614:	r56=r46[r92]
+	 1618:	r92=r69 + 64
+	 1622:	r32=r56.call(r46,r69,r92)
+	 1628:	r65=r10.call(this,r32)
+	 1632:	r32=r69
+	 1635:	r32=r32 + 64
+	 1639:	r69=r32
+	 1641:	goto LABEL_562
+LABEL_1643:
+	 1643:	r35=r41
+	 1645:	r37=r35-0
+	 1647:	r35=++r35
+	 1650:	r41=r35
+	 1653:	r38="length"
+	 1656:	r15=r30[r38]
+	 1660:	r20=r41 < r15
+	 1664:	r20 ? goto LABEL_2722 : goto LABEL_448
+LABEL_1668:
+	 1668:	r24=r36 ^ r9
+	 1672:	r20=r24 ^ r8
+	 1675:	r24=r20 >>> 0
+	 1679:	return r24
+LABEL_1681:
+	 1681:	r92=r69
+	 1683:	r23=r92-0
+	 1685:	r92=++r92
+	 1688:	r69=r92
+	 1690:	r13=r69 < 8
+	 1693:	r13 ? goto LABEL_2574 : goto LABEL_967
+LABEL_1697:
+	 1697:	r22="console"
+	 1700:	r22=console
+	 1703:	r14="error"
+	 1707:	r16=r22[r14]
+	 1711:	r14="invalid j for constant Tj"
+	 1772:	r11=r16.call(r22,r14)
+	 1777:	r14=void 0
+	 1779:	return r14
+FUNC_1781:
+	 1781:	r31="size"
+	 1784:	r44=this[r31]
+	 1787:	r31=8
+	 1790:	r15=r44 * r31
+	 1794:	r22=r15
+	 1797:	r15="chunk"
+	 1800:	r31=this[r15]
+	 1803:	r15="push"
+	 1807:	r44=r31[r15]
+	 1810:	r15=128
+	 1813:	r41=r44.call(r31,r15)
+	 1818:	r15=64
+	 1821:	r44=r41 % r15
+	 1825:	r45=r44
+	 1828:	r44=64 - r45
+	 1832:	r15=r44 < 8
+	 1835:	r15 ? goto LABEL_2868 : goto LABEL_3758
+LABEL_1839:
+	 1839:	r66=r33
+	 1841:	r83=r66-0
+	 1843:	r66=++r66
+	 1846:	r33=r66
+	 1848:	r99=r33 < 16
+	 1851:	r99 ? goto LABEL_2337 : goto LABEL_3031
+LABEL_1855:
+	 1855:	r15=r45
+	 1857:	r29=r15-0
+	 1859:	r15=++r15
+	 1862:	r45=r15
+	 1864:	r24=r45 < 56
+	 1867:	r24 ? goto LABEL_2845 : goto LABEL_3059
+LABEL_1871:
+	 1871:	r15=r35 >= 16
+	 1874:	r15 ? goto LABEL_2942 : goto LABEL_395
+LABEL_1878:
+	 1878:	r35="concat"
+	 1881:	r42=r12[r35]
+	 1884:	r35="reverse"
+	 1888:	r36=r32[r35]
+	 1892:	r35=r36.call(r32)
+	 1896:	r36=r42.call(r12,r35)
+	 1901:	r12=r36
+	 1903:	goto LABEL_1643
+LABEL_1905:
+	 1905:	r51=0
+	 1908:	r12=r51
+	 1910:	r9=r12 < 4
+	 1913:	r9 ? goto LABEL_2534 : goto LABEL_3848
+FUNC_1917:
+	 1917:	r15=Closure[0]
+	 1920:	r9=Closure[1]
+	 1924:	r11=r15[0]
+	 1927:	r18=r9[0]
+	 1931:	r10=r11.call(void 0,this,r18)
+	 1936:	r10 ? goto LABEL_339 : goto LABEL_2093
+FUNC_1940:
+	 1940:	r10=arguments[0]
+	 1944:	r18=r10 >= 0
+	 1947:	r18 ? goto LABEL_555 : goto LABEL_1955
+LABEL_1951:
+	 1951:	r23=void 0
+	 1953:	return r23
+LABEL_1955:
+	 1955:	r18 ? goto LABEL_0 : goto LABEL_3104
+LABEL_1959:
+	 1959:	r26="chunk"
+	 1963:	r22="slice"
+	 1966:	r35=r58[r22]
+	 1969:	r22="Math"
+	 1973:	r22=Math
+	 1976:	r48="min"
+	 1979:	r56=r22[r48]
+	 1983:	r48=r23 + 64
+	 1987:	r65="length"
+	 1990:	r19=r58[r65]
+	 1994:	r65=r56.call(r22,r48,r19)
+	 2000:	r19=r35.call(r58,r23,r65)
+	 2006:	this[r26]=r19
+	 2010:	r28=r23
+	 2013:	r28=r28 + 64
+	 2017:	r23=r28
+	 2019:	goto LABEL_504
+LABEL_2021:
+	 2021:	r25=r23 & r27
+	 2025:	r36=r23 & r34
+	 2029:	r17=r25 | r36
+	 2033:	r36=r27 & r34
+	 2037:	r25=r17 | r36
+	 2041:	r36=r25 >>> 0
+	 2045:	return r36
+LABEL_2047:
+	 2047:	r46="reset"
+	 2050:	r92=this[r46]
+	 2054:	r82=r92.call(this)
+	 2058:	r92="write"
+	 2061:	r46=this[r92]
+	 2065:	r26=r46.call(this,r93)
+	 2070:	goto LABEL_3002
+LABEL_2072:
+	 2072:	r13="Symbol"
+	 2075:	r13=Symbol
+	 2078:	r10="hasInstance"
+	 2082:	r15=r13[r10]
+	 2085:	r18=r11[r15]
+	 2089:	r18 ? goto LABEL_525 : goto LABEL_711
+LABEL_2093:
+	 2093:	r10=r9[0]
+	 2097:	r18=new r10
+	 2100:	return r18
+LABEL_2102:
+	 2102:	return r65
+LABEL_2104:
+	 2104:	r72=r21 - 16
+	 2108:	r40=r65[r72]
+	 2112:	r72=r21 - 9
+	 2116:	r66=r65[r72]
+	 2120:	r72=r40 ^ r66
+	 2124:	r66="_rotl"
+	 2127:	r40=this[r66]
+	 2131:	r68=r21 - 3
+	 2135:	r41=r65[r68]
+	 2138:	r68=15
+	 2141:	r12=r40.call(this,r41,r68)
+	 2147:	r41=r72 ^ r12
+	 2151:	r55=r41
+	 2154:	r103="_rotl"
+	 2157:	r41=this[r66]
+	 2161:	r12=r41.call(this,r55,r68)
+	 2167:	r41=r55 ^ r12
+	 2171:	r62="_rotl"
+	 2174:	r12=this[r66]
+	 2177:	r68=23
+	 2180:	r72=r12.call(this,r55,r68)
+	 2186:	r68=r41 ^ r72
+	 2190:	r55=r68
+	 2193:	r47="_rotl"
+	 2196:	r68=this[r66]
+	 2200:	r66=r21 - 13
+	 2204:	r72=r65[r66]
+	 2207:	r66=7
+	 2210:	r41=r68.call(this,r72,r66)
+	 2216:	r66=r55 ^ r41
+	 2220:	r41=r21 - 6
+	 2224:	r72=r65[r41]
+	 2228:	r41=r66 ^ r72
+	 2232:	r72=r41 >>> 0
+	 2235:	r65[r21]=r72
+	 2238:	goto LABEL_3043
+LABEL_2240:
+	 2240:	r18 ? goto LABEL_525 : goto LABEL_711
+FUNC_2244:
+	 2244:	r38=arguments[0]
+	 2248:	r40="Array"
+	 2251:	r40=Array
+	 2254:	r72=132
+	 2257:	r66=new r40(r72)
+	 2261:	r65=r66
+	 2264:	r66=0
+	 2267:	r33=r66
+	 2269:	r99=r33 < 16
+	 2272:	r99 ? goto LABEL_2337 : goto LABEL_3031
+LABEL_2276:
+	 2276:	r58=r59
+	 2279:	r48="size"
+	 2282:	r26=this[r48]
+	 2285:	r56="length"
+	 2289:	r35=r58[r56]
+	 2293:	r26=r26 + r35
+	 2297:	this[r48]=r26
+	 2301:	r26="chunk"
+	 2304:	r48=this[r26]
+	 2307:	r21="length"
+	 2311:	r26=r48[r56]
+	 2315:	r48=64 - r26
+	 2319:	r23=r48
+	 2322:	r51="length"
+	 2325:	r48=r58[r56]
+	 2329:	r56=r48 < r23
+	 2333:	r56 ? goto LABEL_2971 : goto LABEL_35
+LABEL_2337:
+	 2337:	r66=4
+	 2340:	r72=r33 * r66
+	 2344:	r40=r38[r72]
+	 2348:	r72=r40 << 24
+	 2352:	r65[r33]=r72
+	 2356:	r72=r65[r33]
+	 2360:	r40=r33 * r66
+	 2364:	r68=r40 + 1
+	 2368:	r40=r38[r68]
+	 2372:	r68=r40 << 16
+	 2376:	r72=r72 | r68
+	 2380:	r65[r33]=r72
+	 2384:	r72=r65[r33]
+	 2388:	r68=r33 * r66
+	 2392:	r40=r68 + 2
+	 2396:	r68=r38[r40]
+	 2400:	r40=r68 << 8
+	 2404:	r72=r72 | r40
+	 2408:	r65[r33]=r72
+	 2412:	r72=r65[r33]
+	 2416:	r40=r33 * r66
+	 2420:	r66=r40 + 3
+	 2424:	r40=r38[r66]
+	 2428:	r72=r72 | r40
+	 2432:	r65[r33]=r72
+	 2436:	r72=r65[r33]
+	 2440:	r72=r72 >>> 0
+	 2443:	r65[r33]=r72
+	 2446:	goto LABEL_1839
+LABEL_2448:
+	 2448:	r8="push"
+	 2451:	r11=r29[r8]
+	 2455:	r24=r11.call(r29,r30)
+	 2460:	goto LABEL_6
+CATCH_2462:
+	 2462:	r44=CATCH_ERROE
+	 2464:	throw r44
+LABEL_2466:
+	 2466:	r15 ? goto LABEL_2949 : goto LABEL_1697
+LABEL_2470:
+	 2470:	r72=r21
+	 2472:	r30=r72-0
+	 2474:	r72=++r72
+	 2477:	r21=r72
+	 2479:	r45=r21 < 64
+	 2482:	r45 ? goto LABEL_582 : goto LABEL_2102
+LABEL_2486:
+	 2486:	r18 ? goto LABEL_2072 : goto LABEL_2240
+FUNC_2490:
+	 2490:	r30=arguments[0]
+	 2494:	r35=Array(0)
+	 2497:	r12=r35
+	 2500:	r35=0
+	 2502:	r41=r35
+	 2505:	r38="length"
+	 2508:	r15=r30[r38]
+	 2512:	r20=r41 < r15
+	 2516:	r20 ? goto LABEL_2722 : goto LABEL_448
+LABEL_2520:
+	 2520:	r15=r17 >= 16
+	 2523:	r15 ? goto LABEL_638 : goto LABEL_31
+LABEL_2527:
+	 2527:	r9=r35 < 16
+	 2530:	r9 ? goto LABEL_140 : goto LABEL_1871
+LABEL_2534:
+	 2534:	r51="chunk"
+	 2537:	r44=this[r51]
+	 2540:	r51="push"
+	 2544:	r31=r44[r51]
+	 2548:	r51=3 - r12
+	 2552:	r15=8
+	 2555:	r41=r51 * r15
+	 2559:	r15=r22 >>> r41
+	 2563:	r41=r15 & 255
+	 2567:	r30=r31.call(r44,r41)
+	 2572:	goto LABEL_695
+LABEL_2574:
+	 2574:	r92="reg"
+	 2577:	r46=this[r92]
+	 2581:	r92=r46[r69]
+	 2585:	r97=r92
+	 2588:	r92=4
+	 2591:	r46=r69 * r92
+	 2595:	r10=r46 + 3
+	 2599:	r46=r97 & 255
+	 2602:	r56=r46 >>> 0
+	 2605:	r75[r10]=r56
+	 2609:	r56=r97
+	 2612:	r56=r56 >>> 8
+	 2616:	r97=r56
+	 2619:	r56=r69 * r92
+	 2623:	r10=r56 + 2
+	 2627:	r56=r97 & 255
+	 2630:	r46=r56 >>> 0
+	 2633:	r75[r10]=r46
+	 2637:	r46=r97
+	 2640:	r46=r46 >>> 8
+	 2644:	r97=r46
+	 2647:	r46=r69 * r92
+	 2651:	r10=r46 + 1
+	 2655:	r46=r97 & 255
+	 2658:	r56=r46 >>> 0
+	 2661:	r75[r10]=r56
+	 2665:	r56=r97
+	 2668:	r56=r56 >>> 8
+	 2672:	r97=r56
+	 2675:	r56=r69 * r92
+	 2679:	r92=r97 & 255
+	 2683:	r10=r92 >>> 0
+	 2686:	r75[r56]=r10
+	 2689:	goto LABEL_1681
+LABEL_2691:
+	 2691:	r59=r39
+	 2693:	goto LABEL_2276
+LABEL_2695:
+	 2695:	r35="push"
+	 2698:	r42=r32[r35]
+	 2702:	r35=r24 & 255
+	 2706:	r19=r42.call(r32,r35)
+	 2711:	r35=r24 >> 8
+	 2715:	r24=r35
+	 2718:	r24 ? goto LABEL_2695 : goto LABEL_1878
+LABEL_2722:
+	 2722:	r35="charCodeAt"
+	 2725:	r42=r30[r35]
+	 2729:	r35=r42.call(r30,r41)
+	 2733:	r24=r35
+	 2736:	r35=Array(0)
+	 2739:	r32=r35
+	 2741:	goto LABEL_2695
+LABEL_2743:
+	 2743:	r10=""
+	 2745:	r75=r10
+	 2748:	r10=0
+	 2751:	r69=r10
+	 2753:	r90=r69 < 8
+	 2756:	r90 ? goto LABEL_3812 : goto LABEL_967
+LABEL_2760:
+	 2760:	r15=r12
+	 2762:	r32=r15-0
+	 2764:	r15=++r15
+	 2767:	r12=r15
+	 2769:	r16=r12 < 4
+	 2772:	r16 ? goto LABEL_717 : goto LABEL_1905
+FUNC_2776:
+	 2776:	r8=arguments[0]
+	 2779:	r12=Closure[0]
+	 2783:	r13=currentFunc
+	 2785:	r16=r12[0]
+	 2789:	r24=new r16
+	 2792:	r19=r24
+	 2795:	r24="sum"
+	 2798:	r16=r19[r24]
+	 2802:	r24=r16.call(r19,r8)
+	 2806:	r18=r24
+	 2809:	r24="toArray"
+	 2812:	r16=r19[r24]
+	 2816:	r24=function func_645(){/*Closure:[]*/},r24.length=1;
+	 2821:	r22=r16.call(r19,r18,r24)
+	 2827:	r24="join"
+	 2830:	r16=r22[r24]
+	 2834:	r24=""
+	 2836:	r15=r16.call(r22,r24)
+	 2840:	r11=r15
+	 2843:	return r11
+LABEL_2845:
+	 2845:	r15="chunk"
+	 2848:	r44=this[r15]
+	 2851:	r15="push"
+	 2855:	r41=r44[r15]
+	 2858:	r15=0
+	 2861:	r47=r41.call(r44,r15)
+	 2866:	goto LABEL_1855
+LABEL_2868:
+	 2868:	r15=r45
+	 2871:	r15=r15 - 64
+	 2875:	r45=r15
+	 2877:	r24=r45 < 56
+	 2880:	r24 ? goto LABEL_2845 : goto LABEL_3059
+LABEL_2884:
+	 2884:	r35="_compress"
+	 2887:	r22=this[r35]
+	 2890:	r35="chunk"
+	 2894:	r26=this[r35]
+	 2898:	r25=r22.call(this,r26)
+	 2903:	r26="length"
+	 2906:	r22=r58[r26]
+	 2910:	r26=r23 < r22
+	 2914:	r26 ? goto LABEL_1959 : goto LABEL_3765
+LABEL_2940:
+	 2940:	return r29
+LABEL_2942:
+	 2942:	r15=r35 < 64
+	 2945:	r15 ? goto LABEL_2021 : goto LABEL_3560
+LABEL_2949:
+	 2949:	r22=2055708042
+	 2953:	return r22
+LABEL_2955:
+	 2955:	r10=r69
+	 2957:	r8=r10-0
+	 2959:	r10=++r10
+	 2962:	r69=r10
+	 2964:	r90=r69 < 8
+	 2967:	r90 ? goto LABEL_3812 : goto LABEL_967
+LABEL_2971:
+	 2971:	r56="chunk"
+	 2975:	r11="chunk"
+	 2978:	r48=this[r56]
+	 2981:	r26="concat"
+	 2985:	r35=r48[r26]
+	 2989:	r26=r35.call(r48,r58)
+	 2994:	this[r56]=r26
+	 2998:	r26=void 0
+	 3000:	return r26
+LABEL_3002:
+	 3002:	r46="_fill"
+	 3005:	r92=this[r46]
+	 3009:	r68=r92.call(this)
+	 3013:	r92=0
+	 3015:	r69=r92
+	 3018:	goto LABEL_562
+FUNC_3020:
+	 3020:	r93=arguments[0]
+	 3023:	r63=arguments[1]
+	 3027:	r93 ? goto LABEL_2047 : goto LABEL_3002
+LABEL_3031:
+	 3031:	r72=16
+	 3034:	r21=r72
+	 3036:	r86=r21 < 68
+	 3039:	r86 ? goto LABEL_2104 : goto LABEL_492
+LABEL_3043:
+	 3043:	r72=r21
+	 3045:	r106=r72-0
+	 3047:	r72=++r72
+	 3050:	r21=r72
+	 3052:	r86=r21 < 68
+	 3055:	r86 ? goto LABEL_2104 : goto LABEL_492
+LABEL_3059:
+	 3059:	r15=0
+	 3062:	r12=r15
+	 3064:	r16=r12 < 4
+	 3067:	r16 ? goto LABEL_717 : goto LABEL_1905
+LABEL_3071:
+	 3071:	r51="reg"
+	 3074:	r52=this[r51]
+	 3077:	r8="reg"
+	 3081:	r23=this[r51]
+	 3084:	r51=r23[r21]
+	 3088:	r23=r97[r21]
+	 3092:	r95=r51 ^ r23
+	 3096:	r23=r95 >>> 0
+	 3099:	r52[r21]=r23
+	 3102:	goto LABEL_3544
+LABEL_3104:
+	 3104:	r15=r10 >= 16
+	 3107:	r15 ? goto LABEL_610 : goto LABEL_2466
+LABEL_3111:
+	 3111:	r23="_rotl"
+	 3114:	r95=this[r23]
+	 3117:	r58=0
+	 3120:	r52=r97[r58]
+	 3123:	r96=12
+	 3126:	r136=r95.call(this,r52,r96)
+	 3132:	r52=4
+	 3135:	r95=r97[r52]
+	 3139:	r51=r136 + r95
+	 3143:	r75="_rotl"
+	 3146:	r95=this[r23]
+	 3149:	r136="_t"
+	 3153:	r64=this[r136]
+	 3157:	r136=r64.call(this,r86)
+	 3162:	r64=r95.call(this,r136,r86)
+	 3168:	r136=r51 + r64
+	 3172:	r17=r136
+	 3174:	r136=4294967295
+	 3178:	r64=r17 & r136
+	 3182:	r51=r64 >>> 0
+	 3186:	r17=r51
+	 3189:	r151="_rotl"
+	 3192:	r51=this[r23]
+	 3195:	r64=7
+	 3198:	r95=r51.call(this,r17,r64)
+	 3204:	r17=r95
+	 3207:	r43="_rotl"
+	 3210:	r95=this[r23]
+	 3214:	r51=r97[r58]
+	 3218:	r53=r95.call(this,r51,r96)
+	 3224:	r51=r17 ^ r53
+	 3227:	r53=r51 >>> 0
+	 3231:	r66=r53
+	 3234:	r53="_ff"
+	 3237:	r51=this[r53]
+	 3241:	r53=r97[r58]
+	 3244:	r95=1
+	 3247:	r96=r97[r95]
+	 3250:	r13=2
+	 3253:	r174=r97[r13]
+	 3257:	r144=r51.apply(this,[r86,r53,r96,r174])
+	 3266:	r41=r144
+	 3269:	r144=3
+	 3272:	r174=r97[r144]
+	 3276:	r96=r41 + r174
+	 3280:	r174=r96 + r66
+	 3284:	r96=r86 + 68
+	 3288:	r53=r171[r96]
+	 3292:	r96=r174 + r53
+	 3296:	r41=r96
+	 3298:	r32=4294967295
+	 3302:	r96=r41 & r136
+	 3306:	r53=r96 >>> 0
+	 3310:	r41=r53
+	 3313:	r53="_gg"
+	 3316:	r96=this[r53]
+	 3320:	r53=r97[r52]
+	 3323:	r174=5
+	 3326:	r51=r97[r174]
+	 3329:	r59=6
+	 3332:	r145=r97[r59]
+	 3336:	r12=r96.apply(this,[r86,r53,r51,r145])
+	 3345:	r114=r12
+	 3348:	r12=r97[r64]
+	 3352:	r145=r114 + r12
+	 3356:	r12=r145 + r17
+	 3360:	r145=r171[r86]
+	 3364:	r51=r12 + r145
+	 3368:	r114=r51
+	 3370:	r36=4294967295
+	 3374:	r51=r114 & r136
+	 3378:	r136=r51 >>> 0
+	 3382:	r114=r136
+	 3385:	r136=r97[r13]
+	 3389:	r97[r144]=r136
+	 3393:	r173="_rotl"
+	 3396:	r136=this[r23]
+	 3400:	r144=r97[r95]
+	 3403:	r51=9
+	 3406:	r145=r136.call(this,r144,r51)
+	 3412:	r97[r13]=r145
+	 3416:	r145=r97[r58]
+	 3420:	r97[r95]=r145
+	 3424:	r97[r58]=r41
+	 3428:	r58=r97[r59]
+	 3432:	r97[r64]=r58
+	 3436:	r91="_rotl"
+	 3439:	r58=this[r23]
+	 3443:	r64=r97[r174]
+	 3446:	r145=19
+	 3449:	r95=r58.call(this,r64,r145)
+	 3455:	r97[r59]=r95
+	 3459:	r95=r97[r52]
+	 3463:	r97[r174]=r95
+	 3467:	r108="_rotl"
+	 3470:	r95=this[r23]
+	 3474:	r174=r95.call(this,r114,r51)
+	 3480:	r95=r114 ^ r174
+	 3484:	r67="_rotl"
+	 3487:	r174=this[r23]
+	 3490:	r23=17
+	 3493:	r51=r174.call(this,r114,r23)
+	 3499:	r23=r95 ^ r51
+	 3503:	r51=r23 >>> 0
+	 3506:	r97[r52]=r51
+	 3509:	goto LABEL_786
+FUNC_3511:
+	 3511:	r28=arguments[0]
+	 3514:	r32=arguments[1]
+	 3518:	r34=Array(0)
+	 3521:	r29=r34
+	 3524:	r34=0
+	 3526:	r17=r34
+	 3529:	r25="length"
+	 3532:	r10=r28[r25]
+	 3536:	r31=r17 < r10
+	 3540:	r31 ? goto LABEL_3787 : goto LABEL_2940
+LABEL_3544:
+	 3544:	r51=r21
+	 3546:	r79=r51-0
+	 3548:	r51=++r51
+	 3551:	r21=r51
+	 3553:	r103=r21 < 8
+	 3556:	r103 ? goto LABEL_3071 : goto LABEL_1951
+LABEL_3560:
+	 3560:	r36="console"
+	 3563:	r36=console
+	 3566:	r25="error"
+	 3570:	r17=r36[r25]
+	 3574:	r25="invalid j for bool function FF"
+	 3646:	r30=r17.call(r36,r25)
+	 3651:	r25=0
+	 3654:	return r25
+LABEL_3656:
+	 3656:	r26=void 0
+	 3658:	return r26
+LABEL_3660:
+	 3660:	r58="console"
+	 3663:	r58=console
+	 3666:	r23="error"
+	 3670:	r52=r58[r23]
+	 3674:	r23="compress error: not enough data"
+	 3749:	r163=r52.call(r58,r23)
+	 3754:	r23=void 0
+	 3756:	return r23
+LABEL_3758:
+	 3758:	r24=r45 < 56
+	 3761:	r24 ? goto LABEL_2845 : goto LABEL_3059
+LABEL_3765:
+	 3765:	r19="chunk"
+	 3769:	r26=Array(0)
+	 3772:	this[r19]=r26
+	 3776:	r28=r23
+	 3779:	r28=r28 + 64
+	 3783:	r23=r28
+	 3785:	goto LABEL_504
+LABEL_3787:
+	 3787:	r34=r28[r17]
+	 3791:	r30=r34
+	 3794:	r32 ? goto LABEL_1577 : goto LABEL_2448
+LABEL_3798:
+	 3798:	r26="strToBytes"
+	 3801:	r48=this[r26]
+	 3805:	r59=r48.call(this,r39)
+	 3810:	goto LABEL_2276
+LABEL_3812:
+	 3812:	r10=r75
+	 3815:	r32="reg"
+	 3818:	r92=this[r32]
+	 3822:	r32=r92[r69]
+	 3825:	r92="toString"
+	 3828:	r56=r32[r92]
+	 3832:	r92=16
+	 3835:	r46=r56.call(r32,r92)
+	 3840:	r10=r10 + r46
+	 3844:	r75=r10
+	 3846:	goto LABEL_2955
+LABEL_3848:
+	 3848:	r41=void 0
+	 3850:	return r41
